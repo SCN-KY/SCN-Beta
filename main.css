@@ -1,0 +1,72 @@
+:root {
+    --bg-primary: #121014;
+    --bg-secondary: #340241;
+    --bg-tertiary: #75108e;
+    --bg-card:#1a1a1a;
+    --text-primary: #fae6fe;
+    --text-secondary: #b3b3b3;
+    --text-muted: #666666;
+    --accent-primary: #874fbf;
+    --accent-secondary: #9ea9f0;
+    --border-color: #333333;
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}   
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('https://static.wixstatic.com/media/2d311a_ee5f8ba4f0cc41b9a8b79691de5b8e77~mv2.jpg') center/cover no-repeat fixed;
+    background-color: var(--bg-primary);
+    min-height: 100vh;
+    margin: 0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.redirect-card {
+    max-width: 460px;
+    width: 90%;
+    text-align: center;
+    padding: 2rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+}
+
+.redirect-logo {
+    width: 80px;
+    margin-bottom: 1.2rem;
+}
+
+.redirect-title {
+    font-size: clamp(2rem,5vw,2.8rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.redirect-msg {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.manual-link {
+    color: var(--accent-secondary);
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
